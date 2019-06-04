@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Results2</title>
+</head>
+<body>
+
+    <H2>RESULT</H2>
+    <form action="results2.html" method="get">
+            
+            <p>First: <input type="text" id="first" readonly/></p>
+            <p>Last: <input type="text" id="last" readonly/></p>
+    </form>
+    
+    <script type= "application/javascript">
+        var x= document.getElementById("first");
+        x.value = localStorage.getItem("firstname");
+
+        var x= document.getElementById("last");
+        x.value = localStorage.getItem("lastname");
+
+        var x= document.getElementById("first");
+        x.value = document.cookie.getItem("firstname");
+
+        var x= document.getElementById("last");
+        x.value = document.cookie.getItem("lastname");
+        
+    
+
+    </script>
+
+</body>
+
+</html>

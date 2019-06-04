@@ -1,0 +1,149 @@
+/*header*/
+body{
+    
+    background-image: url("grad.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+    margin: auto;
+    
+}
+.header{
+    background-color: rgb(92, 121, 218);
+    padding: 20px;
+    text-align: center;
+    background: url(header.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    color: #ddd;
+
+}
+
+
+/*the navbar*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+
+
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gray;
+}
+
+/*SearchBar Stuff*/
+
+ul .search-container{
+    float: right;
+}
+
+ul input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+  }
+
+ul .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+ul .search-container button:hover {
+    background-color: black;
+}
+
+/*Body paragraph stuff layout*/
+
+.column{
+    float: left;
+}
+
+.column.side{
+    width: 25%;
+    color: #ddd;
+    
+}
+
+.column.middle{
+    width: 50%;
+    font-family: 'Arimo', sans-serif;
+    color: #ddd;
+}
+
+.column.side2{
+    width: 25%;
+    color: #ddd;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+@media screen and (max-width:600px) {
+    .column.side, .column.middle{
+        width: 100%;
+    }
+}
+
+/*sidebar navbar visible only for consoles pages*/
+
+.vertical-menu {
+  width: 100px; 
+}
+
+.vertical-menu a {
+  background-color: #333; 
+  color: white; 
+  display: block; 
+  padding: 15px; 
+  text-decoration: none; 
+  text-align: center;
+  
+}
+
+.vertical-menu a:hover {
+  background-color: darkgrey; 
+}
+
+.vertical-menu a.active {
+  background-color: whitesmoke; 
+  color: #333;
+}
+
+/*footer stuff*/
+.footer{
+    background-color: rgba(27, 27, 27, 0.719);
+    padding: 2px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 7px;
+    
+}
+

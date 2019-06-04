@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Result</title>
+</head>
+<body>
+
+    <H2>RESULT</H2>
+    <form action="result.html" method="get">
+            
+            <p>First: <input type="text" id="first" readonly/></p>
+            <p>Last: <input type="text" id="last" readonly/></p>
+    </form>
+    
+    <script>
+        var x= document.getElementById("first");
+        x.value = localStorage.getItem("firstname");
+
+        var x= document.getElementById("last");
+        x.value = localStorage.getItem("lastname");
+
+
+        
+    
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Results</title>
+</head>
+<body>
+
+    <H2>RESULT Cookie</H2>
+    <form action="results.html" method="get">
+            
+            <p>First: <input type="text" id="first" disabled="disabled"/></p>
+            <p>Last: <input type="text" id="last" disabled="disabled"/></p>
+    </form>
+    
+    <script type= "application/javascript">
+        var y= document.getElementById("first");
+        y.value = document.cookie.getItem("firstname");
+
+        var x= document.getElementById("last");
+        x.value = document.cookie.getItem("lastname");
+
+        
+
+        
+    
+
+    </script>
+
+</body>
+
+</html>

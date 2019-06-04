@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http=equiv="content-type" content="text/html; charset=utf-8"/>
+
+<!--All the stuff above is junk that is required-->
+<!--This was created by Samir Mahamed-->
+<!--This is a HTML form created to gather information from a user-->
+</head>
+<style>
+
+@media only screen and (orientation: portrait){
+#port {
+    background-color: green;
+       
+}}
+
+@media only screen and (orientation: landscape){
+#port {
+    display: none; 
+}}
+
+@media only screen and (orientation: landscape){
+#land {
+    background-color: green;
+}}
+
+@media only screen and (orientation: portrait){
+#land {
+    display: none;
+}}
+
+@media only screen and (min-width: 300px){
+#wide {
+    background-color: rgb(174, 66, 184);
+    
+}}
+
+@media only screen and (max-width: 300px){
+#wide {
+    display: none;
+}}
+
+@media only screen and (min-height: 300px) {
+#tall {
+    background-color: blue;
+    
+}}
+
+@media only screen and (max-height: 300px){
+#tall {
+    display: none;
+}}
+
+
+#hd {
+    display: none;
+}
+
+@media screen and (aspect-ratio: 16/9){
+#hd {
+    background-color: purple;
+    display: inherit;
+    
+}}
+
+@media only screen and (min-height: 400px) and (min-width: 400px){
+#big {
+    background-color: gray;
+}}
+
+@media only screen and (max-height: 400px) and (max-width: 400px){
+#big {
+    display: none;
+}}
+
+</style>
+
+
+<title>
+    CSS Queries
+</title>
+
+<body>
+    
+    <p id="port">Portriat</p>
+
+    <p id="land">Landscape</p>
+
+    <p id="wide">>300 Wide</p>
+
+    <p id="tall">>300 Tall</p>
+
+    <p id="hd">HD TV</p>
+
+    <p id="big">Big</p>
+    
+
+
+</body>
+
+</html>

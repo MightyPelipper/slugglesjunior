@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http=equiv="content-type" content="text/html; charset=utf-8"/>
+
+<!--All the stuff above is junk that is required-->
+<!--This was created by Samir Mahamed-->
+<!--This is a HTML form created to gather information from a user-->
+</head>
+
+<title>
+Important Forms
+</title>
+
+<body>
+
+<form action= "https://domfu.com/app2/cgi/echo.fcgi" method="get">
+    <input name="NSA" type="hidden" value="form2">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="persona"> <abbr title="Zipcode">Zip/Postal Code</abbr></label>
+        <input type="text" required id="persona" maxlength="5" minlength="5" placeholder="5 digits" pattern="^\d\d\d\d\d(-\d\d\d\d)?$"></input>
+    </fieldset><br>
+    <p>&nbsp;</p>
+
+    Subscribe to our mailing list?
+    <label for="Yes">Yes</label>
+    <input type="radio" name="subscribe" id="Yes" value="Yes"> 
+    <label for="No">No</label>
+    <input type="radio" name="subscribe" id="No" value="No"> <br>
+    <p>&nbsp;</p>
+    
+    <label for="myrange">Rating:</label>
+    <input type="range" min="1" max="100" value="0" class="slider" id="myRange"><br>
+    <p>&nbsp;</p>
+    
+    <label for="commenter">Comments:</label>
+    <textarea name="comments" id="commenter" spellcheck="true" placeholder="Leave a comment"></textarea><br>
+    
+    <p>&nbsp;</p>
+    
+    <fieldset>
+        <legend>Mailing List Subscriptions</legend>
+        
+        <input type="checkbox" name="sub" value="mailing" id="spammers">
+        <label for="spammers">List to sell to spammer</label><br>
+        <input type="checkbox" name="sub" value="mailing" id="lister">
+        <label for="lister">Spam List</label><br>
+
+    </fieldset>
+    <p>&nbsp;</p>
+    <label for="birth">Birthday:</label>
+    <input type="date" name="bday" id="birth" value="2019-02-17"
+       max="2019-03-17" min="2019-02-16"><br>
+    <p>&nbsp;</p>
+
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+
+</body>
+</html>

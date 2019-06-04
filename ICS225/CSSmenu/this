@@ -1,0 +1,10 @@
+allow pasting
+
+var b= document.createElement("button");
+
+button.innerHTML="GO 2 D2L";
+
+console.clear();
+console.log( b );
+
+

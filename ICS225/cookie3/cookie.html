@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Cookies</title>
+</head>
+<body>
+
+    <form action="results.html" method="get">
+        
+            
+            <p>First: <input type="text" id="first"/></p>
+            <p>Last: <input type="text" id="last"/></p>
+            
+        
+        <button type="submit" onclick="send();">Send</button>
+    </form>
+    <script>
+        function send(){
+            
+
+            var y = document.getElementById("first");
+            document.cookie = "firstname=" + y.value;
+
+            var x = document.getElementById("last");
+            document.cookie = "lastname=" + x.value;
+
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Fake</title>
+</head>
+<body>
+
+    <form method="get">
+        
+            
+            <p>First: <input type="text" id="first"/></p>
+            <p>Last: <input type="text" id="last"/></p>
+            
+        
+        <button type="submit" onclick="send();">Send</button>
+    </form>
+
+    <form>
+        <p>First: <input type="text" id="first"/></p>
+        <p>Last: <input type="text" id="last"/></p>
+
+
+    </form>
+    <script>
+        function send(){
+
+            window.alert("it ran");
+            var x= document.getElementById("last");
+            localStorage.setItem("lastname" , x.value );
+    
+            var x= document.getElementById("first");
+            localStorage.setItem("firstname" , x.value );
+        }
+    
+
+    </script>
+
+</body>
+
+</html>
