@@ -1,3 +1,3 @@
 # slugglesjunior
 random code
-This is just a bunch of in class assignment stuff 
+Compilation of projects that I have done while in school
